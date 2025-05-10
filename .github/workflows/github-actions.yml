@@ -27,6 +27,6 @@ jobs:
           route: POST /repos/${{ github.event.repository.owner.login }}/${{ 'boxpodium-copy-backend' }}/dispatches
           token: ${{ secrets.GITHUB_TOKEN }}
           data:
-            ref: ${{ github.ref_name }} 
+            ref: ${{ github.ref }} 
             event_type: pipeline-backend
-            client_payload: '{"frontend_commit": "${{ github.sha }}", "frontend_branch": "${{ github.ref_name }}"}'
+            client_payload: '{"frontend_commit": "${{ github.sha }}", "frontend_branch": "${{ github.ref }}"}'
