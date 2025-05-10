@@ -24,8 +24,9 @@ jobs:
       - name: Run pipeline Backend
         uses: octokit/request-action@v2.x
         with: 
-          route: POST /repos/JhonCordoba/boxpodium-copy-backend/dispatches
-          client_payload: JhonCordoba
-          repository: boxpodium-copy-backend
-          branch: ${{ github.ref }}
-          action: pipeline-backend
+          route: POST /repos/${{ github.event.repository.owner.login }}/${{ 'boxpodium-copy-backend' }}/dispatches
+          token: ${{ secrets.GITHUB_TOKEN }}
+          data:
+            ref: ${{ github.ref_name }} 
+            event_type: pipeline-backend
+            client_payload: '{"frontend_commit": "${{ github.sha }}", "frontend_branch": "${{ github.ref_name }}"}'
