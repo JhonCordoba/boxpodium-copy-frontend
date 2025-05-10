@@ -1,5 +1,7 @@
 name: GitHub Actions React + TypeScript + Vite
 on:
+  repository_dispatch:
+    type: [pipeline-frontend]
   push:
     branches: [ "develop", "main" ]
 jobs:
@@ -18,3 +20,13 @@ jobs:
 
       - name: Build production bundle
         run: npm run build
+
+      - name: Run pipeline Backend
+        uses: octokit/request-action@v2.x
+        with: 
+          route: POST /repos/{owner}/{repo}/dispatches
+          owner: 'JhonCordoba'
+          repo: 'boxpodium-copy-backend'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+          event_type: pipeline-backend
