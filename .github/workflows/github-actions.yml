@@ -22,11 +22,8 @@ jobs:
         run: npm run build
 
       - name: Run pipeline Backend
-        uses: octokit/request-action@v2.x
-        with: 
-          route: POST /repos/${{ github.event.repository.owner.login }}/${{ 'boxpodium-copy-backend' }}/dispatches
-          token: ${{ secrets.GITHUB_TOKEN }}
-          data:
-            ref: ${{ github.ref }} 
-            event_type: pipeline-backend
-            client_payload: '{"frontend_commit": "${{ github.sha }}", "frontend_branch": "${{ github.ref }}"}'
+        run: |
+          curl -XPOST -H "Authorization: Bearer ${{ secrets.ACCESS_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{ "event_type": "pipeline-backend" }' \
+          https://api.github.com/repos/JhonCordoba/boxpodium-copy-backend/dispatches
