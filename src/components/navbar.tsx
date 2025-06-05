@@ -7,7 +7,7 @@ export function Navbar()
 {
     return (
         <>
-            <div className="w-full h-full pt-3 pl-8 pr-8 pb-3 flex flex-col justify-center items-start gap-2.5">
+            <div className="w-full h-full pt-3 pl-8 pr-8 pb-3 flex flex-col justify-center items-start gap-2.5 relative">
                 <div className="w-full px-[30px] py-[10px] bg-[rgba(16,33,63,0.70)] rounded-[16px] flex flex-col justify-start items-start gap-[10px]">
                     <div className="w-full flex flex-row justify-between items-center">
                         <Logo />
