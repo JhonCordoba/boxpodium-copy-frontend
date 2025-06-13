@@ -28,7 +28,7 @@ export function Hero() {
                                 <span className="absolute left-0 bottom-0 w-full h-[4px] md:h-[6px] bg-[#FFBD00]"></span>
                             </span>
                             <span className="text-white text-[40px] md:text-[72px] font-bebas font-normal leading-[48px] md:leading-[89px]">
-                                {" "}al podio,<br className="hidden md:block" />sin perder tiempo.
+                                {" "}al podio,<br className="hidden md:block" /> sin perder tiempo.
                             </span>
                         </div>
                     </div>
