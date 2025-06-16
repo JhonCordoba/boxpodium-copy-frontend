@@ -56,7 +56,7 @@ export function Card() {
                     </Button>
                 </div>
             </div>
-            <div className="absolute top-[13px] right-2 h-5 px-2 py-1 bg-[#F1F6F4] rounded-[4px] flex items-center gap-1">
+            <div className="absolute top-[23px] right-6 h-5 px-2 py-1 bg-[#F1F6F4] rounded-[4px] flex items-center gap-1">
                 <div data-country="Col" className="w-4 h-3 relative">
                     <img src={colombia_flag} alt="Colombia Flag" />
                 </div>
