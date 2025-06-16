@@ -7,13 +7,13 @@ export function Footer() {
         <>
             <div className="w-full bg-[#0A203B] flex flex-col md:flex-row flex-wrap items-center justify-center py-8 px-4 gap-8">
 
-                <div className="min-w-[300px] flex flex-col items-center justify-center gap-2 p-2">
-                    <div data-mode="On Dark" data-type="logo" className="w-[230px] h-[72px] relative overflow-hidden flex items-center justify-center">
+                <div className="flex flex-col items-center justify-center p-2 w-full md:w-auto">
+                    <div data-mode="On Dark" data-type="logo" className="w-[230px] h-[72px] relative overflow-hidden flex items-center justify-center mx-auto">
                         <Logo />
                     </div>
                 </div>
 
-                <div className="flex-1 min-w-[300px] flex flex-wrap justify-start items-center gap-10 px-8">
+                <div className="flex-1 flex flex-wrap justify-start items-center gap-38 px-8">
 
                     <div className="flex flex-col gap-5 min-w-[180px]">
                         <div>
