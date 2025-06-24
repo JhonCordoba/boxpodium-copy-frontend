@@ -1,9 +1,15 @@
-import { Navbar } from "../../components/navbar";
+import { Events } from "../../components/events";
+import { Footer } from "../../components/footer";
+import { Hero } from "../../components/hero";
+import { Search } from "../../components/search";
 
 export function Home() {
   return (
     <div>
-      <Navbar welcomeMessage={"Welcome to the world of React"}></Navbar>
+      <Hero />
+      <Search />
+      <Events />
+      <Footer />
     </div>
   );
 }
