@@ -2,8 +2,11 @@ import weightIcon from '../assets/weight-icon.svg';
 import userIcon from '../assets/user-icon.svg'
 import { Button } from '@mui/material';
 import { Logo } from './logo';
+import { useNavigate } from 'react-router-dom';
 
 export function Navbar() {
+    const navigate = useNavigate();
+
     return (
         <div className="w-full pt-3 pb-3 px-4 md:px-8 flex flex-col gap-2.5 relative">
             <div className="w-full px-3 md:px-[30px] py-2 md:py-[10px] bg-[rgba(16,33,63,0.70)] rounded-[16px] flex flex-col gap-[10px]">
@@ -28,6 +31,7 @@ export function Navbar() {
                                 border: '1.5px solid #FFEAAD',
                                 outlineOffset: '-1.5px',
                             }}
+                            onClick={() => navigate("/sign-in")}
                         >
                             <div data-mode="Light" data-type="user" className="w-4 h-[18px] relative self-stretch">
                                 <div className="w-4 h-5 left-0 top-0 absolute">
