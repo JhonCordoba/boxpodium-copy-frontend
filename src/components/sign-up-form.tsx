@@ -7,7 +7,7 @@ import { Button } from '@mui/material';
 export function SignUpForm() {
     return (
             <div className="w-full h-full flex flex-col items-center justify-center bg-[#0A203B] px-8 py-12" id='form-container'>
-                <div className="flex flex-col items-center bg-white rounded-xl shadow-md px-6 py-20 gap-6">
+                <div className="flex flex-col items-center bg-white rounded-xl shadow-md px-12 py-20 gap-6">
                     <img src={BlackLogo} alt="Logo" className="w-32 mb-2" />
                     <div className="text-2xl md:text-3xl font-bold text-[#1C1C1C] text-center">
                         Regístrate y deja tu marca
@@ -47,17 +47,17 @@ export function SignUpForm() {
                         <input
                             type="text"
                             placeholder="Nombre completo"
-                            className="h-14 px-4 rounded-lg outline outline-1 outline-[#919EAB52] text-base text-[#919EAB] font-normal"
+                            className="h-14 px-4 rounded-lg outline outline-1 outline-gray-400 text-base text-gray-700 font-normal"
                         />
                         <input
                             type="email"
                             placeholder="Correo electrónico"
-                            className="h-14 px-4 rounded-lg outline outline-1 outline-[#919EAB52] text-base text-[#919EAB] font-normal"
+                            className="h-14 px-4 rounded-lg outline outline-1 outline-gray-400 text-base text-gray-700 font-normal"
                         />
                         <input
                             type="password"
                             placeholder="Contraseña"
-                            className="h-14 px-4 rounded-lg outline outline-1 outline-[#919EAB52] text-base text-[#919EAB] font-normal"
+                            className="h-14 px-4 rounded-lg outline outline-1 outline-gray-400 text-base text-gray-700 font-normal"
                         />
                     </div>
                     <div className="w-full text-[#6D757E] text-base font-normal mt-2">
