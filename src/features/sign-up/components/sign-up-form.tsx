@@ -1,7 +1,7 @@
-import BlackLogo from '../assets/black-logo.svg';
-import GoogleIcon from '../assets/google-icon.svg';
-import HeathIcon from '../assets/health-icon.svg';
-import AthleteIcon from '../assets/athlete-icon.svg';
+import BlackLogo from '../../assets/black-logo.svg';
+import GoogleIcon from '../../assets/google-icon.svg';
+import HeathIcon from '../../assets/health-icon.svg';
+import AthleteIcon from '../../assets/athlete-icon.svg';
 import { Button } from '@mui/material';
 
 export function SignUpForm() {

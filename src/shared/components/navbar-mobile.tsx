@@ -1,9 +1,9 @@
 import { useState } from "react";
-import weightIcon from '../assets/weight-icon.svg';
-import userIcon from '../assets/user-icon.svg';
+import weightIcon from '../../assets/weight-icon.svg';
+import userIcon from '../../assets/user-icon.svg';
 import { Button, SwipeableDrawer } from '@mui/material';
 import { Logo } from './logo';
-import menuIcon from '../assets/menu-icon.svg';
+import menuIcon from '../../assets/menu-icon.svg';
 
 export function NavbarMobile() {
     const [menuOpen, setMenuOpen] = useState(false);

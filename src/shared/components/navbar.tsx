@@ -1,5 +1,5 @@
-import weightIcon from '../assets/weight-icon.svg';
-import userIcon from '../assets/user-icon.svg'
+import weightIcon from '../../assets/weight-icon.svg';
+import userIcon from '../../assets/user-icon.svg'
 import { Button } from '@mui/material';
 import { Logo } from './logo';
 import { useNavigate } from 'react-router-dom';

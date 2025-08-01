@@ -1,6 +1,6 @@
-import weightIcon from '../assets/weight-gray-icon.svg';
-import filterIcon from '../assets/filter-icon.svg';
-import searchIcon from '../assets/search-icon.svg';
+import weightIcon from '../../assets/weight-gray-icon.svg';
+import filterIcon from '../../assets/filter-icon.svg';
+import searchIcon from '../../assets/search-icon.svg';
 import { Button } from '@mui/material';
 
 export function Search() {

@@ -1,5 +1,5 @@
-import { Banner } from "../../components/banner";
-import { SignUpForm } from "../../components/sign-up-form";
+import { Banner } from "../../../shared/components/banner";
+import { SignUpForm } from "../components/sign-up-form";
 
 export function SignUp() { 
     return (

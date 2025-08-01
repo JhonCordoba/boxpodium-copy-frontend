@@ -1,7 +1,7 @@
-import card_image from '../assets/card-image.jpg';
-import colombia_flag from '../assets/colombia-flag.svg';
-import calendar from '../assets/calendar.svg';
-import weight_icon from '../assets/weight-icon.svg';
+import card_image from '../../assets/card-image.jpg';
+import colombia_flag from '../../assets/colombia-flag.svg';
+import calendar from '../../assets/calendar.svg';
+import weight_icon from '../../assets/weight-icon.svg';
 import { Button } from '@mui/material';
 
 export function Card() {

@@ -1,6 +1,6 @@
 import { Logo } from "./logo";
-import whatsAppIcon from '../assets/whatsapp-icon.svg';
-import instagramIcon from '../assets/instagram-icon.svg';
+import whatsAppIcon from '../../assets/whatsapp-icon.svg';
+import instagramIcon from '../../assets/instagram-icon.svg';
 
 export function Footer() {
     return (
