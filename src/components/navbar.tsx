@@ -1,8 +1,8 @@
-import weightIcon from '../assets/weight-icon.svg';
-import userIcon from '../assets/user-icon.svg'
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import { Button } from '@mui/material';
 import { Logo } from './logo';
 import { useNavigate } from 'react-router-dom';
+import PersonIcon from '@mui/icons-material/Person';
 
 export function Navbar() {
     const navigate = useNavigate();
@@ -16,29 +16,18 @@ export function Navbar() {
                         <Button
                             className="!px-3 !py-2 md:!px-[22px] md:!py-[12px] !bg-[#FFBD00] !rounded-[12px] flex items-center gap-2 md:gap-2.5"
                         >
-                            <div data-mode="Dark" data-type="weight" className="w-5 h-[18px] relative">
-                                <div className="w-5 h-[18px] left-0 top-0 absolute">
-                                    <img src={weightIcon} alt="icon" />
-                                </div>
-                            </div>
-                            <span className="text-xs md:text-sm" style={{ color: '#0A203B', fontFamily: "'Noto Sans', sans-serif" }}>
+                            <FitnessCenterIcon fontSize="small" sx={{ color: 'secondary.main' }} />
+                            <span className="text-xs md:text-sm font-axiforma" style={{ color: '#0A203B' }}>
                                 Crear Competencia
                             </span>
                         </Button>
                         <Button
                             className="!px-3 !py-2 md:!px-[22px] md:!py-[12px] !rounded-[12px] flex items-center gap-2 md:gap-2.5"
-                            style={{
-                                border: '1.5px solid #FFEAAD',
-                                outlineOffset: '-1.5px',
-                            }}
+                            style={{border: '1.5px solid #FFEAAD'}}
                             onClick={() => navigate("/sign-in")}
                         >
-                            <div data-mode="Light" data-type="user" className="w-4 h-[18px] relative self-stretch">
-                                <div className="w-4 h-5 left-0 top-0 absolute">
-                                    <img src={userIcon} alt="icon" />
-                                </div>
-                            </div>
-                            <span className="text-xs md:text-sm" style={{ color: '#FFEAAD', fontFamily: "'Noto Sans', sans-serif" }}>
+                            <PersonIcon fontSize="small" style={{ color: '#FFEAAD' }} />
+                            <span className="text-xs md:text-sm" style={{ color: '#FFEAAD' }}>
                                 Iniciar sesión
                             </span>
                         </Button>
