@@ -1,9 +1,9 @@
 import { useState } from "react";
-import weightIcon from '../assets/weight-icon.svg';
-import userIcon from '../assets/user-icon.svg';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import PersonIcon from '@mui/icons-material/Person';
 import { Button, SwipeableDrawer } from '@mui/material';
 import { Logo } from './logo';
-import menuIcon from '../assets/menu-icon.svg';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export function NavbarMobile() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ export function NavbarMobile() {
             <div className="w-full bg-[rgba(16,33,63,0.70)] rounded-[16px] flex flex-row items-center justify-between px-5 py-3">
                 <Logo />
                 <Button className="!p-0" onClick={() => setMenuOpen(true)}>
-                    <img src={menuIcon} alt="Menu Icon" className="w-6 h-6" />
+                    <MenuIcon className="text-white" />
                 </Button>
             </div>
             <SwipeableDrawer
@@ -35,7 +35,7 @@ export function NavbarMobile() {
                     <Button
                         className="w-full !bg-[#FFBD00] !rounded-[12px] flex items-center justify-center gap-2  text-xs font-bold"
                     >
-                        <img src={weightIcon} alt="icon" className="w-[26px] h-[18px]" />
+                        <FitnessCenterIcon style={{ color: '#0A203B' }} />
                         <span className="text-black">Crear Competencia</span>
                         
                     </Button>
@@ -46,7 +46,7 @@ export function NavbarMobile() {
                             outlineOffset: '-1.5px',
                         }}
                     >
-                        <img src={userIcon} alt="icon" className="w-[18px] h-[20px]" />
+                        <PersonIcon style={{ color: '#FFEAAD' }} />
                         <span className="text-[#FFEAAD] text-xs font-bold">Iniciar sesión</span>
                     </Button>
                 </div>

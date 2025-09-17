@@ -1,43 +1,19 @@
-import heroVideo from '../assets/hero.mp4';
-
 export function BackgroundVideo()
 {
     return (
         <>
-            <div style={{
-                width: '100%',
-                height: '100%',
-                left: 0,
-                top: 0,
-                position: 'absolute',
-                zIndex: 0,
-                overflow: 'hidden'
-            }}>
+            <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
                 <video
-                    src={heroVideo}
                     autoPlay
                     loop
                     muted
                     playsInline
-                    style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        position: 'absolute',
-                        left: 0,
-                        top: 0,
-                    }}
-                    poster="https://placehold.co/1923x816"
-                />
-                <div style={{
-                    position: 'absolute',
-                    left: 0,
-                    top: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: 'linear-gradient(0deg, rgba(13, 37, 70, 0.80) 0%, rgba(13, 37, 70, 0.80) 100%)',
-                    zIndex: 1
-                }} />
+                    className="absolute inset-0 w-full h-full object-cover"
+                    poster="https://res.cloudinary.com/dckirnls1/video/upload/so_1s/hero_uej6s5.jpg"
+                >
+                    <source src='https://res.cloudinary.com/dckirnls1/video/upload/v1758128317/hero_uej6s5.mp4' type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[rgba(13,37,70,0.8)] to-[rgba(13,37,70,0.8)]" />
             </div>
         </>
     )

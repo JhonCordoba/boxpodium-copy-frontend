@@ -1,7 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@import "@fontsource/bebas-neue";
 
-body {
-    margin: 0; line-height: normal;
-    font-family: 'Noto Sans', sans-serif;
+@font-face {
+    font-family: 'Axiforma';
+    src: url('./fonts/Axiforma-Font/Axiforma-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+}
+p, span, a, button, label, input {
+    font-family: 'Axiforma', 'Noto Sans', Arial, sans-serif;
 }

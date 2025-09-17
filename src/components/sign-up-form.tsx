@@ -1,7 +1,7 @@
 import BlackLogo from '../assets/black-logo.svg';
-import GoogleIcon from '../assets/google-icon.svg';
-import HeathIcon from '../assets/health-icon.svg';
-import AthleteIcon from '../assets/athlete-icon.svg';
+import GoogleIcon from '@mui/icons-material/Google';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import PersonIcon from '@mui/icons-material/Person';
 import { Button } from '@mui/material';
 
 export function SignUpForm() {
@@ -9,16 +9,16 @@ export function SignUpForm() {
             <div className="w-full h-full flex flex-col items-center justify-center bg-[#0A203B] px-8 py-12" id='form-container'>
                 <div className="flex flex-col items-center bg-white rounded-xl shadow-md px-12 py-20 gap-6">
                     <img src={BlackLogo} alt="Logo" className="w-32 mb-2" />
-                    <div className="text-2xl md:text-3xl font-bold text-[#1C1C1C] text-center">
+                    <h1 className="text-2xl md:text-3xl font-bold text-[#1C1C1C] text-center">
                         Regístrate y deja tu marca
-                    </div>
-                    <div className="text-lg text-[#1C1C1C] text-center font-normal">
+                    </h1>
+                    <span className="text-lg text-[#1C1C1C] text-center font-normal">
                         Estás a un paso de subir al podio. Crea tu cuenta.
-                    </div>
+                    </span>
              <Button
                     variant="outlined"
                     fullWidth
-                    startIcon={<img src={GoogleIcon} alt="Google Icon" className="w-6 h-6" />}
+                    startIcon={<GoogleIcon />}
                     sx={{
                         py: 2,
                         borderRadius: '1rem',
@@ -28,7 +28,7 @@ export function SignUpForm() {
                         fontSize: '1rem',
                         mb: 0.5,
                         textTransform: 'none',
-                        gap: 2,
+                        gap: 1,
                         backgroundColor: 'white',
                         '&:hover': {
                             borderColor: '#919EAB',
@@ -36,7 +36,7 @@ export function SignUpForm() {
                         },
                     }}
                 >
-                    Continuar con Google
+                    <p>Continuar con Google</p>
                 </Button>
                     <div className="relative flex items-center w-full my-2">
                         <hr className="flex-grow border-t border-[#919EAB52]" />
@@ -60,23 +60,23 @@ export function SignUpForm() {
                             className="h-14 px-4 rounded-lg outline outline-1 outline-gray-400 text-base text-gray-700 font-normal"
                         />
                     </div>
-                    <div className="w-full text-[#6D757E] text-base font-normal mt-2">
+                    <span className="w-full text-[#6D757E] text-base font-normal mt-2">
                         ¿Cómo quieres participar?
-                    </div>
+                    </span>
                     <div className="flex w-full gap-4">
                         <Button
                             variant="outlined"
                             fullWidth
-                            startIcon={<img src={HeathIcon} alt="Health Icon" className="w-8 h-8" />}
+                            startIcon={<FitnessCenterIcon />}
                             sx={{
-                                py: 2,
+                                py: 1,
                                 borderRadius: '1rem',
                                 borderColor: '#919EAB52',
                                 color: '#6D757E',
                                 fontWeight: 600,
                                 fontSize: '1rem',
                                 textTransform: 'none',
-                                gap: 2,
+                                gap: 1,
                                 backgroundColor: 'white',
                                 '&:hover': {
                                     borderColor: '#919EAB',
@@ -84,21 +84,21 @@ export function SignUpForm() {
                                 },
                             }}
                         >
-                            Box / Organizador
+                            <span>Box / Organizador</span>
                         </Button>
                         <Button
                             variant="outlined"
                             fullWidth
-                            startIcon={<img src={AthleteIcon} alt="Athlete Icon" className="w-8 h-8" />}
+                            startIcon={<PersonIcon />}
                             sx={{
-                                py: 2,
+                                py: 1,
                                 borderRadius: '1rem',
                                 borderColor: '#919EAB52',
                                 color: '#6D757E',
                                 fontWeight: 600,
                                 fontSize: '1rem',
                                 textTransform: 'none',
-                                gap: 2,
+                                gap: 1,
                                 backgroundColor: 'white',
                                 '&:hover': {
                                     borderColor: '#919EAB',
@@ -106,7 +106,7 @@ export function SignUpForm() {
                                 },
                             }}
                         >
-                            Atleta
+                            <span>Atleta</span>
                         </Button>
                     </div>
                     <label className="flex items-start gap-2 w-full mt-2">
@@ -137,7 +137,7 @@ export function SignUpForm() {
                             },
                         }}
                     >
-                        Crear cuenta
+                        <span>Crear cuenta</span>
                     </Button>
                     <div className="flex justify-center items-center gap-4 mt-4">
                         <span className="text-base text-[#1C1C1C]">¿Ya tienes una cuenta?</span>

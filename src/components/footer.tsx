@@ -1,6 +1,6 @@
 import { Logo } from "./logo";
-import whatsAppIcon from '../assets/whatsapp-icon.svg';
-import instagramIcon from '../assets/instagram-icon.svg';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export function Footer() {
     return (
@@ -13,7 +13,7 @@ export function Footer() {
                     </div>
                     <div className="flex flex-col gap-5 min-w-[180px]">
                         <div>
-                            <div className="text-white text-2xl font-normal">Comunidad</div>
+                            <h1 className="text-white text-2xl">Comunidad</h1>
                             <div className="w-[85px] h-[6px] bg-[#FFBD00] mt-2" />
                         </div>
                         <div className="flex flex-col gap-3">
@@ -24,7 +24,7 @@ export function Footer() {
 
                     <div className="flex flex-col gap-5 min-w-[180px]">
                         <div>
-                            <div className="text-white text-2xl font-normal">Recursos</div>
+                            <h1 className="text-white text-2xl">Recursos</h1>
                             <div className="w-[85px] h-[6px] bg-[#FFBD00] mt-2" />
                         </div>
                         <div className="flex flex-col gap-3">
@@ -34,24 +34,24 @@ export function Footer() {
                     </div>
                     <div className="flex flex-col gap-5 min-w-[180px]">
                         <div>
-                            <div className="text-white text-2xl font-normal">Contacto</div>
+                            <h1 className="text-white text-2xl">Contacto</h1>
                             <div className="w-[85px] h-[6px] bg-[#FFBD00] mt-2" />
                         </div>
                         <div className="flex flex-row items-center gap-4 mt-2">
                             <a href="#">
-                                <img src={whatsAppIcon} alt="WhatsApp Icon" className="w-8 h-8" />
+                                <WhatsAppIcon className="text-white" />
                             </a>
                             <a href="#">
-                                <img src={instagramIcon} alt="Instagram Icon" className="w-8 h-8" />
+                                <InstagramIcon className="text-white" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="w-full h-[70px] bg-[#061930] flex justify-center items-center">
-                <div className="text-white text-sm text-center">
+                <p className="text-white text-sm text-center">
                     Copyright © 2025 Answertic. Todos los derechos reservados
-                </div>
+                </p>
             </div>
         </>
     );
